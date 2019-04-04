@@ -1,5 +1,5 @@
 * {
-  box-sizing: content-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -32,6 +32,10 @@ div, h2, p, figure {
   display: flex;
   flex: 1;
   flex-direction: column;
+}
+
+.nested-column {
+  flex: 2;
 }
 
 .main-column {
@@ -100,3 +104,11 @@ div, h2, p, figure {
   justify-content: space-between;
   margin-top: 10px;
 }
+
+@media screen and (device-width: 320px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
