@@ -1,5 +1,5 @@
 * {
-  box-sizing: border-box;
+  box-sizing: content-box;
 }
 
 html {
@@ -25,6 +25,7 @@ div, h2, p, figure {
 
 .columns {
   display: flex;
+  justify-content: center;
 }
 
 .column {
