@@ -1,1 +1,1 @@
-alert(' New project Flex layout!');
+//alert(' New project Flex layout!');
