@@ -105,10 +105,54 @@ div, h2, p, figure {
   margin-top: 10px;
 }
 
-@media screen and (device-width: 320px) {
+.first-article {
+  flex-direction: row;
+}
+
+.first-article .article-body {
+  flex: 1;
+}
+
+.first-article .article-image {
+  order: 2;
+  height: 300px;
+  padding-top: 0;
+  width: 400px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 568px) {
+  * {
+
+    margin: 0;
+    padding: 0;
+  }
+
+  .columns,
+  .column,
   .main {
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    align-items: stretch;
+ 
+    
   }
+
+  .is-4by3 {
+    background-color: mediumseagreen;
+
+  }
+
+  .is-4by3 img {
+    width: 65%;
+    
+  }
+
+  .first-article {
+  flex-direction: column;
+}
+
+
 }
 
